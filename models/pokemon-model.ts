@@ -1,13 +1,26 @@
 export class Pokemon {
+  name: string;
+  url: string;
+  weight: number;
+  height: number;
+  experience: number;
+  image: string;
 
-    name: string;
-    url: number;
-    // weight: number;
+  constructor(
+    name: string,
+    url: string,
+    height: number,
+    weight: number,
+    experience: number,
+    image: string
+  ) {
+    this.name = name;
+    this.url = url;
+    this.weight = weight;
+    this.height = height;
+    this.experience = experience;
+    this.image = image;
 
-    constructor(name:string, height: number, weight: number){
-        this.name = name;
-        this.url = height;
-        // this.weight = weight;
-    }
-
+    // this.weight = weight;
+  }
 }
