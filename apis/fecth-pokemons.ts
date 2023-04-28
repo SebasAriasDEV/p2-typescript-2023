@@ -13,9 +13,10 @@ export const loadPokemons = async (count: number): Promise<Pokemon[]> => {
     const responseDetails = await fetch(detailsURL);
     const jsonDetails: any = await responseDetails.json();
 
-    const { base_experience, height, weight, sprites } = jsonDetails;
+    const { id, base_experience, height, weight, sprites } = jsonDetails;
     const pokemonImg = sprites.other.dream_world.front_default;
 
+    pokemon.id = id;
     pokemon.experience = base_experience;
     pokemon.height = height;
     pokemon.weight = weight;

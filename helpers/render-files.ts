@@ -35,9 +35,9 @@ const renderUsers = (pokemons: Pokemon[]) => {
                   <li>Weight: ${pokemon.weight}</li>
                 </ul>
                 <a
-                  href="${pokemon.url}"
+                  href="/pokemon-details.html"
                   class="btn btn-primary"
-                  target="_blank"
+                  onclick="onSeeMore('${pokemon.url}')"
                   >See more</a
                 >
               </div>
@@ -61,6 +61,7 @@ export const render = (pokemons: Pokemon[]) => {
     <div class="row">
         ${renderUsers(pokemons)}
     </div>
+    <script src="./dom/see-details-button.js"></script>
     </body>
 </html>
 `;
