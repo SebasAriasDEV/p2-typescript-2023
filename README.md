@@ -1,15 +1,9 @@
-# p2-typescript-2023
+# Simple Web - Pokemon API (p2-typescript-2023)
 
-To install dependencies:
+Simplre web app that fetchs information from the Pokemon API, to show details of each Pokemon.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v0.5.7. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Techologies used
+- Javascript
+- Typescript
+- HTML
+- CSS
