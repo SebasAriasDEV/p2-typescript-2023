@@ -2,7 +2,7 @@
 
 Simple web app that fetches information from the Pokemon API, to show details of each Pokemon.
 
-## Techologies used
+## Technologies used
 - Javascript
 - Typescript
 - HTML
