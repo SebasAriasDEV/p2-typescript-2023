@@ -6,6 +6,12 @@ export class Pokemon {
   height: number;
   experience: number;
   image: string;
+  hpStats: number;
+  attackStats: number;
+  defenseStat: number;
+  specialAttStats: number;
+  specialDefStats: number;
+  speedStats: number;
 
   constructor(
     id: string,
@@ -14,7 +20,13 @@ export class Pokemon {
     height: number,
     weight: number,
     experience: number,
-    image: string
+    image: string,
+    hpStats: number,
+    attackStats: number,
+    defenseStat: number,
+    specialAttStats: number,
+    specialDefStats: number,
+    speedStats: number
   ) {
     (this.id = id), (this.name = name);
     this.url = url;
@@ -22,6 +34,12 @@ export class Pokemon {
     this.height = height;
     this.experience = experience;
     this.image = image;
+    this.hpStats = hpStats;
+    this.attackStats = attackStats;
+    this.defenseStat = defenseStat;
+    this.specialAttStats = specialAttStats;
+    this.specialDefStats = specialDefStats;
+    this.speedStats = speedStats;
 
     // this.weight = weight;
   }
