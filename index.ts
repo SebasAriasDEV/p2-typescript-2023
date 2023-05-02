@@ -18,7 +18,7 @@ try {
 for (const pokemon of pokemons) {
   try {
     const detailsHTML = renderDetails(pokemon);
-    await writeFile(`pokemons-details-${pokemon.name}.html`, detailsHTML);
+    await writeFile(`pokemon-details-${pokemon.name}.html`, detailsHTML);
   } catch (error) {
     console.log(error);
   }

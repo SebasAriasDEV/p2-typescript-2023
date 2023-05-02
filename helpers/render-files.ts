@@ -35,9 +35,8 @@ const renderUsers = (pokemons: Pokemon[]) => {
                   <li>Weight: ${pokemon.weight}</li>
                 </ul>
                 <a
-                  href="/pokemon-details.html"
+                  href="/pokemon-details-${pokemon.name}.html"
                   class="btn btn-primary"
-                  onclick="onSeeMore('${pokemon.url}')"
                   >See more</a
                 >
               </div>
